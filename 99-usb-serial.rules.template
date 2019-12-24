@@ -1,0 +1,1 @@
+SUBSYSTEM=="tty", ATTRS{idVendor}=="@#VENDOR_ID", ATTRS{idProduct}=="@#PRODUCT_ID", ENV{SYSTEMD_WANTS}="serial-getty@ttyDebugConsole.service", SYMLINK+="ttyDebugConsole"
