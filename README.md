@@ -1,6 +1,5 @@
 # Raspbian USB-UART debug console
-Debug console for Raspberry using USB-serial----serial-USB adapter(null modem adapter)
-This program enable serial console interface for raspberry using USB-serial connection instead of using GPIO rx-tx header.
+Enable serial console interface for raspberry using USB-serial-USB(Null modem) adapter instead of using GPIO rx-tx header.
 
 ## Install
 - Connect USB-serial adapter to Raspberry USB port.
