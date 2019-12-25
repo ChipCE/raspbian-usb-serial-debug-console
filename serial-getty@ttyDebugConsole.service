@@ -21,7 +21,8 @@ IgnoreOnIsolate=yes
 
 [Service]
 #ExecStart=-/sbin/agetty --keep-baud 115200,38400,9600 %I $TERM
-ExecStart=-/sbin/agetty ttyDebugConsole 115200 vt320
+#ExecStart=-/sbin/agetty ttyDebugConsole 115200 vt320
+ExecStart=-/sbin/agetty --keep-baud 115200,38400,9600 ttyDebugConsole 115200 vt320
 Type=idle
 Restart=always
 #RestartSec=5

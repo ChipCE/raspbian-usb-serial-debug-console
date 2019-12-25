@@ -12,7 +12,7 @@ if [[ $EUID -ne 0 ]]; then
 fi
 
 echo "Setting udev rule for fixed USB uart device name (ttyDebugConsole)..."
-yes |cp 99-usb-serial.rules.conf /etc/udev/rules.d/99-usb-serial.rules
+yes | cp 99-usb-serial.rules.conf /etc/udev/rules.d/99-usb-serial.rules
 echo "Making systemd service for USB debug console interface..."
 yes | cp serial-getty@ttyDebugConsole.service /etc/systemd/system/serial-getty@ttyDebugConsole.service
 echo "Enabling udev rule..."
